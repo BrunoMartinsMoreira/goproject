@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  postgres:
+    image: postgres:14
+    container_name: my_postgres
+    environment:
+      POSTGRES_DB: go_db
+      POSTGRES_USER: moreira
+      POSTGRES_PASSWORD: moreira
+    ports:
+      - "5432:5432"
+   
